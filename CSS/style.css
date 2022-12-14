@@ -1,46 +1,136 @@
 @font-face {
-    font-family: 'roboto-regular';
-    src: url(/fonts/Roboto-Regular.ttf) format('truetype');
+  font-family: "roboto-regular";
+  src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "roboto-italic";
+    src: url(/fonts/Roboto-Italic.ttf) format("truetype");
 }
 
-*{
-    margin:0;
-    padding: 10px;
-    font-family: 'roboto-regular';
+* {
+  margin: 0;
+  font-family: "roboto-regular";
 }
-.one{
-    background-color: #1F2937;
-    color: #F9FAF8;
+body {
+  /* width: 80%; */
+  padding: 3% 10%;
 }
-.one-first{
-    font-size: 48px;
-    font-weight: bold;
-}
-.one-second{
-    font-size: 18px;
-    color: #E5E7EB;
-}
-.two{
-    color:#1F2937;
-}
-.two-first{
-    font-weight:bolder;
-    color:#1F2937;
-    font-size: 48px;
-}
-.three{
-    background-color: #E5E7EB;
-    font-size: 36px;
-    font-style: italic;
-    color: #1F2937;
-}
-.four{
-    background-color: #3882f6;
 
+.headerlink a {
+  color: #f9faf8;
+  padding: 10%;
 }
-.center {
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+nav {
+  float: right;
+  display: flex;
+}
+#headerLogo{
+    float:left;
+}
+.headerlink {
+  text-align: center;
+}
+.one {
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 2% 10%;
+}
+.one-first {
+  font-size: 48px;
+  font-weight: bold;
+}
+.one-second {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.two {
+  color: #1f2937;
+  padding: 5% 0%;
+}
+
+.two-first {
+  font-weight: bolder;
+  color: #1f2937;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.squares {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 12px;
+    margin-right: 50px;
+}
+
+#randomSquares{
+    display: flex;
+    text-align: center;
     margin: auto;
-    width: 50%;
-    border: 3px ;
-    padding: 10px;
-  }
+    width: 790px;
+}
+
+.three {
+  padding: 5% 0;
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-family: 'roboto-italic';
+}
+.four {
+  background-color: #3882f6;
+  border: none;
+  border-radius: 12px;
+  color: #e5e7eb;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2% 0%;
+}
+.four:hover {
+    background-color: #ff00ea;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/clear */
+.randomid{
+    clear: both;
+    display: flex;
+    padding: 10% 0%;
+}
+
+#randomid div{
+    flex: 1;
+    padding-right: 5%;
+}
+
+#randomid img{
+    flex: 1;
+}
+
+
+/* https://www.w3schools.com/css/css_align.asp */
